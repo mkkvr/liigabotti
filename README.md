@@ -1,1 +1,1 @@
-![Liigabotti in action](https://github.com/mkkvr/liigabotti/screenshot.png)
+![Liigabotti in action](https://github.com/mkkvr/liigabotti/blob/master/screenshot.png)
