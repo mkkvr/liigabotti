@@ -1,0 +1,1 @@
+![Liigabotti in action](github.com/mkkvr/liigabotti/screenshot.png)
