@@ -4,16 +4,22 @@ import axios from 'axios';
 import { Navbar, Button, ButtonGroup, Form, Input, Container, Collapse, NavbarToggler, Nav, NavbarBrand } from 'reactstrap';
 import { faSync } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import queryString from 'query-string'
 
 class App extends Component {
 
   constructor(props) {
     super(props);
+    var s = "";
+    if (window.location.search != null) {
+      var query = queryString.parse(window.location.search);
+      if (query['s']) s = query['s']
+    }
     this.state = {
         team : "",
         teamFilter : 0, 
         clips : [],
-        search : "",
+        search : s,
         filter : 0,
         goals : false,
         recaps : false,
